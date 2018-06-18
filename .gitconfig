@@ -1,0 +1,27 @@
+[user]
+	name = Aaron Panchal
+	email = aaron.panchal@gmail.com
+[credential]
+	helper = osxkeychain
+[alias]
+	st = status
+	sta = status
+	stat = status
+	co = checkout
+	ci = commit
+	cp = cherry-pick
+	sh = stash
+	unstash = stash pop
+	pr = pull --rebase origin master
+	pul = pull
+	uncommit = reset --soft 'HEAD^'
+[core]
+	excludesfile = ~/.gitignore_global
+[push]
+	default = upstream
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
+[pager]
+	branch = false
