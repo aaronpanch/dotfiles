@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GLOBIGNORE=".:..:.git" # Skip non-project dotfiles
+GLOBIGNORE=".:..:.git:.DS_Store" # Skip non-project dotfiles
 dir="$(cd "$(dirname "$0")"; pwd)"
 
 for x in .*; do
